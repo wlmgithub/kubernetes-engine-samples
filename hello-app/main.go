@@ -48,7 +48,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 	host, _ := os.Hostname()
 	t := time.Now()
 	fmt.Fprintf(w, "Hello, world!\n")
-	fmt.Fprintf(w, "Version: 1.0.0\n")
+	fmt.Fprintf(w, "Version: 2.0.0\n")
 	fmt.Fprintf(w, "Hostname: %s\n", host)
 	fmt.Fprintf(w, "Timestamp now: %s\n", t.Format("20060102150405"))
 }
